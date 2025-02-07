@@ -22,3 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Reproducción bloqueada:", error);
     });
 });
+
+
+
+// agrega un audio de fondo
+const audio = document.createElement("audio");
+audio.src = "audio/audio1.mp3";
+audio.setAttribute("loop", "");
+document.body.appendChild(audio);
+audio.play();
+
