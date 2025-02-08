@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="respuesta_si.css">
 </head>
 
+<link rel="stylesheet" href="respuesta_si.css">
+
 <body>
 
   <body>
@@ -17,9 +19,25 @@
     </audio>
 
     <div>
-      <h1>¡Eres el amor de mi vida, Kashi! 💖</h1>
-      <p>Gracias por aceptar ser mi San Valentín. Te amo mucho. 🥰</p>
+      <h1>¡¡¡Si ves esto significa que aceptaste!!!</h1>
+      <p>Gracias por aceptar ser mi San Valentín,</p>
+      <p>Te amo con todo mi corazón mi Kashisita bonita</p>
+      <p>eres la niña más hermosa de este planeta,</p>
+      <p>eres mi tesorito más preciado,</p>
+      <p>te amo con todo mi ser.</p>
+      <p>Gracias por estar siempre para mi.</p>
+      <p>Le agradezco a Dios por haberte puesto en mi camino.
     </div>
+    <script src="respuesta_si.js"></script>
+    <script>
+      // Recuperar el estado del audio desde localStorage
+      const audio = document.querySelector('audio');
+      const audioTime = localStorage.getItem('audioTime');
+      if (audioTime) {
+          audio.currentTime = audioTime;
+      }
+      audio.play();
+    </script>
   </body>
 
 </html>
