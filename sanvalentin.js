@@ -16,19 +16,8 @@ botonNo.addEventListener('click', () => {
     botonNo.style.transform = `translate(${randomX}px, ${randomY}px)`;
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const audio = document.getElementById("background-audio");
-    audio.play().catch(error => {
-        console.log("Reproducción bloqueada:", error);
-    });
+// al hacer click en la pagina dar play al audio
+document.addEventListener('click', () => {
+    const audio = document.querySelector('audio');
+    audio.play();
 });
-
-
-
-// agrega un audio de fondo
-const audio = document.createElement("audio");
-audio.src = "audio/audio1.mp3";
-audio.setAttribute("loop", "");
-document.body.appendChild(audio);
-audio.play();
-
